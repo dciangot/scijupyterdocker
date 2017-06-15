@@ -5,7 +5,7 @@ sklearn, keras, tensorflow, numpy, root_numpy, pandas, root_pandas, matplotlib, 
 
 just do from the directory you want to work on:
 
-    docker run dciangot/scijupyter
+    docker run -p 8888:8888 -v $PWD:/data dciangot/scijupyter
 
 
 save from the message that will appear (something like this [*]) copy the token.
