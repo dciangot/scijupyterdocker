@@ -1,6 +1,8 @@
 FROM dciangot/mlplayground:latest
 WORKDIR /data
 
+RUN pip install h5py
+
 ENV ROOTSYS             "/etc/exp_sw/root/"
 ENV PATH                "$ROOTSYS/bin:$ROOTSYS/bin/bin:$PATH"
 ENV LD_LIBRARY_PATH     "/lapack/build/lib/:$ROOTSYS/lib:$LD_LIBRARY_PATH"
